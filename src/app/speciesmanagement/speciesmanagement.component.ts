@@ -1,18 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-declare var jquery:any;
-declare var $ :any;
 
 @Component({
-  selector: 'app-users-management',
-  templateUrl: './users-management.component.html',
-  styleUrls: ['./users-management.component.css']
+  selector: 'app-speciesmanagement',
+  templateUrl: './speciesmanagement.component.html',
+  styleUrls: ['./speciesmanagement.component.css']
 })
-export class UsersManagementComponent implements OnInit {
+export class SpeciesmanagementComponent implements OnInit {
 
-  
-  constructor() {  
-    
-  }
+  constructor() { }
 
   ngOnInit(): void {
     let table = $('table').DataTable({
@@ -42,4 +37,5 @@ export class UsersManagementComponent implements OnInit {
     //do previous particular the records like  0 - 100 rows.
     //we are calling to API
   }
-}
+  }
+

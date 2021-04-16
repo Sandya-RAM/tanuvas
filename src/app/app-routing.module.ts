@@ -4,6 +4,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { UsersManagementComponent } from './users-management/users-management.component';
 import { MastermoduleComponent } from './mastermodule/mastermodule.component';
+import { AccessmanagementComponent } from './accessmanagement/accessmanagement.component';
+import { DiseasemanagementComponent } from './diseasemanagement/diseasemanagement.component';
+import { SpeciesmanagementComponent } from './speciesmanagement/speciesmanagement.component';
+import { BreedsmanagementComponent } from './breedsmanagement/breedsmanagement.component';
+import { StockmanagementComponent } from './stockmanagement/stockmanagement.component';
+import { VaccinemanagementComponent } from './vaccinemanagement/vaccinemanagement.component';
+import { FarmsmanagementComponent } from './farmsmanagement/farmsmanagement.component';
+import { AddDiseaseManagementComponent } from './add-disease-management/add-disease-management.component';
+
 const routes: Routes = [
  { path:'', component: LoginComponent, pathMatch: 'full' },
  {path:'login',component:LoginComponent},
@@ -17,6 +26,42 @@ const routes: Routes = [
       path:'usermanagement',
       component:UsersManagementComponent, // another child route component that the router renders
     },
+    {
+      path:'accessmanagement',
+      component:AccessmanagementComponent, // another child route component that the router renders
+    },
+   /* {
+      path:'dashboard',
+      component:DashboardComponent, // another child route component that the router renders
+    },*/
+    {
+      path:'diseasemanagement',
+      component:DiseasemanagementComponent, // another child route component that the router renders
+    },
+    {
+      path:'speciesmanagement',
+      component:SpeciesmanagementComponent, // another child route component that the router renders
+    },
+    {
+      path:'breedsmanagement',
+      component:BreedsmanagementComponent , // another child route component that the router renders
+    },
+    {
+      path:'stockmanagement',
+      component:StockmanagementComponent, // another child route component that the router renders
+    },
+    {
+      path:'vaccinemanagement',
+      component:VaccinemanagementComponent, // another child route component that the router renders
+    },
+    {
+      path:'farmsmanagement',
+      component:FarmsmanagementComponent , // another child route component that the router renders
+    },
+    {
+      path:'adddiseasemanagement',
+      component:AddDiseaseManagementComponent , // another child route component that the router renders
+    },
   ],
 },
   
@@ -27,4 +72,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingcomponents=[DashboardComponent,LoginComponent,MastermoduleComponent,UsersManagementComponent]
+export const routingcomponents=[DashboardComponent,LoginComponent,MastermoduleComponent,UsersManagementComponent,AccessmanagementComponent,AddDiseaseManagementComponent]
