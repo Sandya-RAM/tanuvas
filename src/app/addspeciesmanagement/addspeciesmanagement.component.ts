@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+declare var $: any;
 @Component({
   selector: 'app-addspeciesmanagement',
   templateUrl: './addspeciesmanagement.component.html',
@@ -10,6 +11,7 @@ export class AddspeciesmanagementComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    $('.selectpicker').selectpicker('refresh');
   }
   speciesmanagement(){
     this.router.navigate([this.returnUrl]);

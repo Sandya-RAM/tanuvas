@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+declare var $: any;
 @Component({
   selector: 'app-breedsmanagement',
   templateUrl: './breedsmanagement.component.html',

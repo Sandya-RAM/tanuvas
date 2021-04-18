@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+declare var $: any;
 @Component({
   selector: 'app-addfarmsmanagement',
   templateUrl: './addfarmsmanagement.component.html',
@@ -10,6 +11,7 @@ export class AddfarmsmanagementComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    $('.selectpicker').selectpicker('refresh');
   }
   farmsmanagement(){
     this.router.navigate([this.returnUrl]);

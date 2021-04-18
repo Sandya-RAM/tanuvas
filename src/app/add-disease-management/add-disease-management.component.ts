@@ -1,7 +1,6 @@
-import { Component,OnInit} from '@angular/core';
+import { Component,OnInit,AfterViewInit} from '@angular/core';
 import { Router } from '@angular/router';
 declare var $: any;
-declare var require: any;
 @Component({
   selector: 'app-add-disease-management',
   templateUrl: './add-disease-management.component.html',
@@ -14,9 +13,12 @@ export class AddDiseaseManagementComponent implements OnInit {
   }
 
   ngOnInit(): void {
+      $('.selectpicker').selectpicker('refresh');
    
   }
-  
+  AfterViewInit(): void {
+   
+  }
   diseaseManagement(){
     this.router.navigate([this.returnUrl]);
   }
