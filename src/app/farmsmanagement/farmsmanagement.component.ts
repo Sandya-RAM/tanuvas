@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-farmsmanagement',
   templateUrl: './farmsmanagement.component.html',
   styleUrls: ['./farmsmanagement.component.css']
 })
 export class FarmsmanagementComponent implements OnInit {
-
-  constructor() { }
+  returnUrl= "/dashboard/addfarmsmanagement";
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     let table = $('table').DataTable({
@@ -36,6 +36,9 @@ export class FarmsmanagementComponent implements OnInit {
   previousButtonClickEvent(): void {
     //do previous particular the records like  0 - 100 rows.
     //we are calling to API
+  }
+  addfarmsmanagement(){
+    this.router.navigate([this.returnUrl]);
   }
   }
 

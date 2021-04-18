@@ -5,15 +5,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DataTablesModule } from 'angular-datatables';
-import { AddDiseaseManagementComponent } from './add-disease-management/add-disease-management.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingcomponents,
     NavbarComponent,
-    SidebarComponent,
-    AddDiseaseManagementComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-diseasemanagement',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diseasemanagement.component.css']
 })
 export class DiseasemanagementComponent implements OnInit {
+  returnUrl= "/dashboard/adddiseasemanagement";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     let table = $('table').DataTable({
@@ -26,7 +28,7 @@ export class DiseasemanagementComponent implements OnInit {
   wholeRowClick(): void {
     console.log('Whole row clicked.');
   }
-
+ 
   nextButtonClickEvent(): void {
     //do next particular records like  101 - 200 rows.
     //we are calling to api
@@ -36,6 +38,9 @@ export class DiseasemanagementComponent implements OnInit {
   previousButtonClickEvent(): void {
     //do previous particular the records like  0 - 100 rows.
     //we are calling to API
+  }
+  AdddiseaseManagement(){
+    this.router.navigate([this.returnUrl]);
   }
   }
 

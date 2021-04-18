@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-vaccinemanagement',
   templateUrl: './vaccinemanagement.component.html',
   styleUrls: ['./vaccinemanagement.component.css']
 })
 export class VaccinemanagementComponent implements OnInit {
-
-  constructor() { }
+  returnUrl= "/dashboard/addvaccinemanagement";
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     let table = $('table').DataTable({
@@ -36,6 +36,9 @@ export class VaccinemanagementComponent implements OnInit {
   previousButtonClickEvent(): void {
     //do previous particular the records like  0 - 100 rows.
     //we are calling to API
+  }
+  addvaccinemanagement(){
+    this.router.navigate([this.returnUrl]);
   }
   }
 

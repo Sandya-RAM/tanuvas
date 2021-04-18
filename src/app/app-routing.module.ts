@@ -11,7 +11,12 @@ import { BreedsmanagementComponent } from './breedsmanagement/breedsmanagement.c
 import { StockmanagementComponent } from './stockmanagement/stockmanagement.component';
 import { VaccinemanagementComponent } from './vaccinemanagement/vaccinemanagement.component';
 import { FarmsmanagementComponent } from './farmsmanagement/farmsmanagement.component';
-import { AddDiseaseManagementComponent } from './add-disease-management/add-disease-management.component';
+import {AddDiseaseManagementComponent} from './add-disease-management/add-disease-management.component';
+import { AddspeciesmanagementComponent } from './addspeciesmanagement/addspeciesmanagement.component';
+import { AddbreedsmanagementComponent } from './addbreedsmanagement/addbreedsmanagement.component';
+import { AddstockmanagementComponent } from './addstockmanagement/addstockmanagement.component';
+import { AddvaccinemanagementComponent } from './addvaccinemanagement/addvaccinemanagement.component';
+import { AddfarmsmanagementComponent } from './addfarmsmanagement/addfarmsmanagement.component';
 
 const routes: Routes = [
  { path:'', component: LoginComponent, pathMatch: 'full' },
@@ -36,7 +41,7 @@ const routes: Routes = [
     },*/
     {
       path:'diseasemanagement',
-      component:DiseasemanagementComponent, // another child route component that the router renders
+      component:DiseasemanagementComponent, 
     },
     {
       path:'speciesmanagement',
@@ -57,14 +62,33 @@ const routes: Routes = [
     {
       path:'farmsmanagement',
       component:FarmsmanagementComponent , // another child route component that the router renders
-    },
+    },    
     {
       path:'adddiseasemanagement',
-      component:AddDiseaseManagementComponent , // another child route component that the router renders
-    },
+      component:AddDiseaseManagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'addspeciesmanagement',
+      component:AddspeciesmanagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'addbreedsmanagement',
+      component:AddbreedsmanagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'addstockmanagement',
+      component:AddstockmanagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'addvaccinemanagement',
+      component:AddvaccinemanagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'addfarmsmanagement',
+      component:AddfarmsmanagementComponent, // another child route component that the router renders
+    }, 
   ],
-},
-  
+},  
 ];
 
 @NgModule({
@@ -72,4 +96,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingcomponents=[DashboardComponent,LoginComponent,MastermoduleComponent,UsersManagementComponent,AccessmanagementComponent,AddDiseaseManagementComponent]
+export const routingcomponents=[DashboardComponent,LoginComponent,MastermoduleComponent,UsersManagementComponent,AccessmanagementComponent,AddDiseaseManagementComponent,AddspeciesmanagementComponent,AddbreedsmanagementComponent,AddstockmanagementComponent,AddvaccinemanagementComponent,AddfarmsmanagementComponent]

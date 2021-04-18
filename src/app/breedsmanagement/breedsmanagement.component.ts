@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-breedsmanagement',
   templateUrl: './breedsmanagement.component.html',
   styleUrls: ['./breedsmanagement.component.css']
 })
 export class BreedsmanagementComponent implements OnInit {
-
-  constructor() { }
+  returnUrl= "/dashboard/addbreedsmanagement";
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     let table = $('table').DataTable({
@@ -36,6 +36,9 @@ export class BreedsmanagementComponent implements OnInit {
   previousButtonClickEvent(): void {
     //do previous particular the records like  0 - 100 rows.
     //we are calling to API
+  }
+  addbreedsmanagement(){
+    this.router.navigate([this.returnUrl]);
   }
   }
 

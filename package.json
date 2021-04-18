@@ -25,6 +25,7 @@
     "angular-datatables": "^11.1.2",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.6.0",
+    "bootstrap-select": "^1.13.18",
     "datatables.net": "^1.10.24",
     "datatables.net-dt": "^1.10.24",
     "font-awesome": "^4.7.0",

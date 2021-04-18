@@ -24,6 +24,7 @@
 <script src="assets/js/core/jquery.min.js"></script>
   <script src="assets/js/core/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
 </head>
 <body>
   <app-root></app-root>
@@ -51,7 +52,7 @@
   <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
   <script src="assets/js/plugins/jquery.bootstrap-wizard.js"></script>
   <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-  <script src="assets/js/plugins/bootstrap-selectpicker.js"></script>
+<!--<script src="assets/js/plugins/bootstrap-selectpicker.js"></script>-->
   <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
   <script src="assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
   <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
@@ -86,7 +87,10 @@
 
 
   <script>
-	  $(function(){var current = location.pathname;
+	  $(function(){
+      $('.selectpicker').selectpicker(
+ );
+      var current = location.pathname;
 	  $('.nav .nav-item').each(function()
 	  {var $this = $(this);
 	  // if the current path is like this link, make it active
@@ -135,6 +139,7 @@
     
       // We can watch for our custom `fileselect` event like this
       $(document).ready(function() {
+         
         $(":file").on("fileselect", function(event, numFiles, label) {
           var input = $(this)
               .parents(".input-group")
