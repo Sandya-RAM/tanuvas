@@ -11,12 +11,12 @@ import { BreedsmanagementComponent } from './breedsmanagement/breedsmanagement.c
 import { StockmanagementComponent } from './stockmanagement/stockmanagement.component';
 import { VaccinemanagementComponent } from './vaccinemanagement/vaccinemanagement.component';
 import { FarmsmanagementComponent } from './farmsmanagement/farmsmanagement.component';
-import {AddDiseaseManagementComponent} from './add-disease-management/add-disease-management.component';
-import { AddspeciesmanagementComponent } from './addspeciesmanagement/addspeciesmanagement.component';
-import { AddbreedsmanagementComponent } from './addbreedsmanagement/addbreedsmanagement.component';
-import { AddstockmanagementComponent } from './addstockmanagement/addstockmanagement.component';
-import { AddvaccinemanagementComponent } from './addvaccinemanagement/addvaccinemanagement.component';
-import { AddfarmsmanagementComponent } from './addfarmsmanagement/addfarmsmanagement.component';
+import {AddDiseaseManagementComponent} from './addmodulemanagement/add-disease-management/add-disease-management.component';
+import { AddspeciesmanagementComponent } from './addmodulemanagement/addspeciesmanagement/addspeciesmanagement.component';
+import { AddbreedsmanagementComponent } from './addmodulemanagement/addbreedsmanagement/addbreedsmanagement.component';
+import { AddstockmanagementComponent } from './addmodulemanagement/addstockmanagement/addstockmanagement.component';
+import { AddvaccinemanagementComponent } from './addmodulemanagement/addvaccinemanagement/addvaccinemanagement.component';
+import { AddfarmsmanagementComponent } from './addmodulemanagement/addfarmsmanagement/addfarmsmanagement.component';
 
 const routes: Routes = [
  { path:'', component: LoginComponent, pathMatch: 'full' },
@@ -35,10 +35,10 @@ const routes: Routes = [
       path:'accessmanagement',
       component:AccessmanagementComponent, // another child route component that the router renders
     },
-   /* {
-      path:'dashboard',
-      component:DashboardComponent, // another child route component that the router renders
-    },*/
+    {
+      path:'mastermodule',
+      component:MastermoduleComponent, // another child route component that the router renders
+    },
     {
       path:'diseasemanagement',
       component:DiseasemanagementComponent, 

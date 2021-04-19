@@ -44,8 +44,7 @@
     </div>-->
     <ul class="nav">
 <li class="nav-item active">
-        <a routerLink="/dashboard"  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
-          true}" class="nav-link" >
+        <a [routerLink]="['/dashboard']"  class="nav-link" >
           <!--<i class="material-icons">dashboard</i>-->
     <img alt="icons" src="assets/images/sidemenu/Dashboard.png" class="icons" />
           <p> Dashboard </p>
@@ -68,8 +67,8 @@
         </a>
       </li>
       <li class="nav-item ">
-        <a routerLink="/dashboard" routerLinkActive="active-link" class="nav-link" [routerLinkActiveOptions]="{exact:
-          true}" href="master_module.php">
+        <a routerLink="/dashboard"  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+          true}" class="nav-link" href="master_module.php">
           <!--<i class="material-icons">dashboard</i>-->
     <img alt="icons" src="assets/images/sidemenu/Master.png" class="icons" />
           <p> Master Module </p>
