@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-viewstockmanagement',
   templateUrl: './viewstockmanagement.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewstockmanagementComponent implements OnInit {
 
-  constructor() { }
+
+  returnUrl= "/dashboard/stockmanagement";
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  stockmanagement(){
+    this.router.navigate([this.returnUrl]);
   }
 
 }

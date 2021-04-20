@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 })
 export class StockmanagementComponent implements OnInit {
   returnUrl= "/dashboard/addstockmanagement";
+  viewurl="/dashboard/viewstockmanagement"
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -38,6 +39,12 @@ export class StockmanagementComponent implements OnInit {
     //we are calling to API
   }
   addstockmanagement(){
+    this.router.navigate([this.returnUrl]);
+  }
+  viewstockmanagement(){
+    this.router.navigate([this.viewurl]);
+  }
+  editstockmanagement(){
     this.router.navigate([this.returnUrl]);
   }
   }

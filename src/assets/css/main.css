@@ -71,7 +71,10 @@ body.tanuvas.off-canvas-sidebar, body.tanuvas {
     height: 100%;
     z-index: -1;
 }
-
+input#usr {
+    position: relative;
+    left: 2px!important;
+}
 .tanuvas .custom-file-label {
     position: absolute;
     top: 0;
@@ -738,7 +741,6 @@ body.tanuvas.off-canvas-sidebar .container_fluid {
     border-radius: .2rem;
     /* margin-right: 12px; */
     position: relative;
-    left: -14px;
     top: -3px;
     height: 43px;
 }

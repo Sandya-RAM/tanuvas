@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-viewfarmsmanagement',
   templateUrl: './viewfarmsmanagement.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewfarmsmanagementComponent implements OnInit {
 
-  constructor() { }
+  returnUrl= "/dashboard/farmsmanagement";
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  farmsmanagement(){
+    this.router.navigate([this.returnUrl]);
+  }
 }

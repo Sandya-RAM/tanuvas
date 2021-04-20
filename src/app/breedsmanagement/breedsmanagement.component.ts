@@ -8,6 +8,7 @@ declare var $: any;
 })
 export class BreedsmanagementComponent implements OnInit {
   returnUrl= "/dashboard/addbreedsmanagement";
+  viewurl= "/dashboard/viewbreedsmanagement";
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -39,6 +40,12 @@ export class BreedsmanagementComponent implements OnInit {
     //we are calling to API
   }
   addbreedsmanagement(){
+    this.router.navigate([this.returnUrl]);
+  }
+  viewbreedsmanagement(){
+    this.router.navigate([this.viewurl]);
+  }
+  editbreedsmanagement(){
     this.router.navigate([this.returnUrl]);
   }
   }

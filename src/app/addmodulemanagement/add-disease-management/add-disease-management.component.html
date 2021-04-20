@@ -6,7 +6,7 @@
        <div class="col-lg-12 col-md-12 col-sm-12 common_title">
        <h2>ADD - DISEASE MANAGEMENT</h2>
        <p>Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy</p>
-       <a href="#" class="back_to"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+       <a  class="back_to"><i class="fa fa-chevron-left" aria-hidden="true"></i>
         Back
        </a>
        </div>
@@ -34,18 +34,24 @@
        </div>
        <div class="col-lg-4 col-md-6 col-sm-6">
        <div class="form-group">
-       <div class="row">
-       <div class="col-lg-6 col-md-6 col-sm-6">
-        <label for="fromage">From Age</label>
-        <input type="number" class="form-control" min="0" max="50" step="1">
-       </div>
-       <div class="col-lg-6 col-md-6 col-sm-6">
-        <label for="toage">To Age</label>
-        <input type="number" class="form-control" min="0" max="50" step="1">
+        <label for="Breed Name">Animal ID</label>
+       <select class="selectpicker form-control">
+       <option selected="selected">ID-C02077</option>
+       <option value="Red Sindhi">ID-C02086</option>
+       <option value="Red Sindhi">ID-C02056</option>
+       </select>
        </div>
        </div>
-       </div>
-       </div>
+       <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group">
+         <label for="Breed Name">Age Groups</label>
+        <select class="selectpicker form-control">
+        <option selected="selected">Young</option>
+        <option value="Red Sindhi">Adult</option>
+        <option value="Red Sindhi">Grower</option>
+        </select>
+        </div>
+        </div>
        <div class="col-lg-4 col-md-6 col-sm-6">
        <div class="form-group">
        <label for="Disease Name">Disease Name</label>
@@ -81,6 +87,18 @@
        </div>
        </div>
        </div>
+       <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group form_group">
+        <label for="Note">Samples</label>
+        <input type="text" class="form-control" id="usr" placeholder="Lorem ipsum">
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="form-group form_group">
+          <label for="Note">Diagonestic Reports</label>
+          <input type="text" class="form-control" id="usr" placeholder="Lorem ipsum">
+          </div>
+          </div>
        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
        <button type="submit" class="btn btn-fill btn-primary mb-3" (click)= 'diseaseManagement()'>Submit<div class="ripple-container"></div></button><br>
        <button type="submit" class="btn btn-fill btn-default">Cancel<div class="ripple-container"></div></button>

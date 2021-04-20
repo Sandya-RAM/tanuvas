@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 })
 export class VaccinemanagementComponent implements OnInit {
   returnUrl= "/dashboard/addvaccinemanagement";
+  viewurl= "/dashboard/viewvaccinemanagement";
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -38,6 +39,12 @@ export class VaccinemanagementComponent implements OnInit {
     //we are calling to API
   }
   addvaccinemanagement(){
+    this.router.navigate([this.returnUrl]);
+  }
+  viewvaccinemanagement(){
+    this.router.navigate([this.viewurl]);
+  }
+  editvaccinemanagement(){
     this.router.navigate([this.returnUrl]);
   }
   }

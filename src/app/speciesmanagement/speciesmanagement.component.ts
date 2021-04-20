@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class SpeciesmanagementComponent implements OnInit {
   returnUrl= "/dashboard/addspeciesmanagement";
-
+  viewurl="/dashboard/viewspeciesmanagement";
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -39,6 +39,12 @@ export class SpeciesmanagementComponent implements OnInit {
     //we are calling to API
   }
   addspeciesmanagement(){
+    this.router.navigate([this.returnUrl]);
+  }
+  viewspeciesmanagement(){
+    this.router.navigate([this.viewurl]);
+  }
+  editspeciesManagement(){
     this.router.navigate([this.returnUrl]);
   }
   }

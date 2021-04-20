@@ -5,8 +5,8 @@
      <div class="col-lg-12 col-md-12 col-sm-12 common_title">
      <h2>DISEASE MANAGEMENT</h2>
      <p>Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy</p>
-      <a href="#" class="back_to"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>
-     </div>
+     <li><a href="#" class="back_to"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a></li>
+    </div>
      </div>
      <div class="row">
      <div class="col-lg-3 col-sm-3 col-12">
@@ -46,7 +46,7 @@
      <!--helllooo-->
      <div class="col-lg-5 col-sm-6 col-12">
       <div class="form-group">
- <button class="btn btn-primary mt-0 mb-0"  (click)= 'AdddiseaseManagement()'><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+ <button class="btn btn-primary mt-0 mb-0"  (click)='AdddiseaseManagement()'><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
   </div>
      </div>
      </div>
@@ -80,10 +80,13 @@
      <th>S.No</th>
      <th>Species</th>
      <th>Breed</th>
+     <th>Animal ID</th>
      <th>Age Groups</th>
      <th>Disease Name</th>
      <th>Drug Name</th>
      <th>Dose Value</th>
+     <th>Samples</th>
+     <th>Diagonestic Reports</th>
      <th>Actions</th>
      </tr>
      </thead>
@@ -92,13 +95,16 @@
      <td>1</td>
      <td>Cow</td>
      <td>Red Sindhi</td>
+      <td>ID-C02077</td>
      <td>0 - 5 Years</td>
      <td>Bovine</td>
      <td>Amoxicillin</td>
      <td>250/mg</td>
+     <td>Lorem</td>
+     <td>loerium</td>
      <td>
-     <i class="fa fa-file-text icon_common" onclick="window.location.href='disease_management.php';" aria-hidden="true"></i>
-     <i class="fa fa-pencil-square-o icon_common" aria-hidden="true"></i>
+     <i class="fa fa-file-text icon_common"  (click)= 'viewdiseaseManagement()' aria-hidden="true"></i>
+     <i class="fa fa-pencil-square-o icon_common" (click)='editdiseaseManagement()'aria-hidden="true"></i>
      <i class="fa fa-trash icon_common" aria-hidden="true"></i> 
      </td>
      </tr>
@@ -106,13 +112,16 @@
      <td>2</td>
      <td>Cat</td>
      <td>Himalayan Cat</td>
+     <td>ID-C02056</td>
      <td>1- 3 Years</td>
      <td>Rabies</td>
      <td>Imovax</td>
      <td>50/mg</td>
+     <td>Lorem</td>
+     <td>loerium</td>
      <td>
-     <i class="fa fa-file-text icon_common" onclick="window.location.href='disease_management.php';" aria-hidden="true"></i>
-     <i class="fa fa-pencil-square-o icon_common" aria-hidden="true"></i>
+     <i class="fa fa-file-text icon_common"  (click)= 'viewdiseaseManagement()' aria-hidden="true"></i>
+     <i class="fa fa-pencil-square-o icon_common" (click)='editdiseaseManagement()' aria-hidden="true"></i>
      <i class="fa fa-trash icon_common" aria-hidden="true"></i> 
      </td>
      </tr>
@@ -120,19 +129,21 @@
      <td>3</td>
      <td>Dog</td>
      <td>Rottweiler</td>
+     <td>ID-C02086</td>
      <td>1 - 7 Years</td>
      <td>Leptospirosis</td>
      <td>Maropitant</td>
      <td>20/ml</td>
+     <td>Lorem</td>
+     <td>loerium</td>
      <td>
-     <i class="fa fa-file-text icon_common" onclick="window.location.href='disease_management.php';" aria-hidden="true"></i>
-     <i class="fa fa-pencil-square-o icon_common" aria-hidden="true"></i>
+    <i class="fa fa-file-text icon_common"  (click)= 'viewdiseaseManagement()' aria-hidden="true"></i>
+     <i class="fa fa-pencil-square-o icon_common" (click)='editdiseaseManagement()' aria-hidden="true"></i>
      <i class="fa fa-trash icon_common" aria-hidden="true"></i> 
      </td>
      </tr>
      </tbody>
      <tfoot>
-     
      </tfoot>
      </table>
      </div>
