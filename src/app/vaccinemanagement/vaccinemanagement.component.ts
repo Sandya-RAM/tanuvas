@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 export class VaccinemanagementComponent implements OnInit {
   returnUrl= "/dashboard/addvaccinemanagement";
   viewurl= "/dashboard/viewvaccinemanagement";
+  editUrl="/dashboard/editvaccinemanagement"
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -45,7 +46,7 @@ export class VaccinemanagementComponent implements OnInit {
     this.router.navigate([this.viewurl]);
   }
   editvaccinemanagement(){
-    this.router.navigate([this.returnUrl]);
+    this.router.navigate([this.editUrl]);
   }
   }
 

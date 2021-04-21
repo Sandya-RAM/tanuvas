@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
 })
 export class StockmanagementComponent implements OnInit {
   returnUrl= "/dashboard/addstockmanagement";
-  viewurl="/dashboard/viewstockmanagement"
+  viewurl="/dashboard/viewstockmanagement";
+  editUrl="/dashboard/editstockmanagement"
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -45,7 +46,7 @@ export class StockmanagementComponent implements OnInit {
     this.router.navigate([this.viewurl]);
   }
   editstockmanagement(){
-    this.router.navigate([this.returnUrl]);
+    this.router.navigate([this.editUrl]);
   }
   }
 

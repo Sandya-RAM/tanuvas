@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class DiseasemanagementComponent implements OnInit {
   returnUrl= "/dashboard/adddiseasemanagement";
   viewurl="/dashboard/viewdiseasemanagement";
+  editUrl="/dashboard/editdiseasemanagement";
   back="/dashboard";
   constructor(private router: Router) { }
 
@@ -47,7 +48,7 @@ export class DiseasemanagementComponent implements OnInit {
     this.router.navigate([this.viewurl]);
   }
   editdiseaseManagement(){
-    this.router.navigate([this.returnUrl]);
+    this.router.navigate([this.editUrl]);
   }
   backward(){
   this.router.navigate([this.back])

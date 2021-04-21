@@ -23,6 +23,13 @@ import { ViewbreedsmanagementComponent } from './viewmodulemanagement/viewbreeds
 import { ViewstockmanagementComponent } from './viewmodulemanagement/viewstockmanagement/viewstockmanagement.component';
 import { ViewvaccinemanagementComponent } from './viewmodulemanagement/viewvaccinemanagement/viewvaccinemanagement.component';
 import { ViewfarmsmanagementComponent } from './viewmodulemanagement/viewfarmsmanagement/viewfarmsmanagement.component';
+import {EditDiseaseManagementComponent} from './editmodulemanagement/edit-disease-management/edit-disease-management.component';
+import { EditspeciesmanagementComponent } from './editmodulemanagement/editspeciesmanagement/editspeciesmanagement.component';
+import { EditbreedsmanagementComponent } from './editmodulemanagement/editbreedsmanagement/editbreedsmanagement.component';
+import { EditstockmanagementComponent } from './editmodulemanagement/editstockmanagement/editstockmanagement.component';
+import { EditvaccinemanagementComponent } from './editmodulemanagement/editvaccinemanagement/editvaccinemanagement.component';
+import { EditfarmsmanagementComponent } from './editmodulemanagement/editfarmsmanagement/editfarmsmanagement.component';
+
 
 const routes: Routes = [
  { path:'', component: LoginComponent, pathMatch: 'full' },
@@ -117,6 +124,30 @@ const routes: Routes = [
       path:'viewfarmsmanagement',
       component:ViewfarmsmanagementComponent, 
     }, 
+    {
+      path: 'editfarmsmanagement',
+      component: EditfarmsmanagementComponent,
+    },
+    {
+      path:'editdiseasemanagement',
+      component:EditDiseaseManagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'editspeciesmanagement',
+      component:EditspeciesmanagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'editbreedsmanagement',
+      component:EditbreedsmanagementComponent, // another child route component that the router renders
+    }, 
+    {
+      path:'editstockmanagement',
+      component:EditstockmanagementComponent, // another child route component that the router renders
+    },
+    {
+      path:'editvaccinemanagement',
+      component:EditvaccinemanagementComponent, // another child route component that the router renders
+    }
   ],
 },  
 ];

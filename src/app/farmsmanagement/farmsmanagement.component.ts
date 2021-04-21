@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
 })
 export class FarmsmanagementComponent implements OnInit {
   returnUrl= "/dashboard/addfarmsmanagement";
-  viewurl="/dashboard/viewfarmsmanagement"
+  viewurl="/dashboard/viewfarmsmanagement";
+  editUrl="/dashboard/editfarmsmanagement"
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -45,7 +46,7 @@ export class FarmsmanagementComponent implements OnInit {
     this.router.navigate([this.viewurl]);
   }
   editfarmsmanagement(){
-    this.router.navigate([this.returnUrl]);
+    this.router.navigate([this.editUrl]);
   }
   }
 

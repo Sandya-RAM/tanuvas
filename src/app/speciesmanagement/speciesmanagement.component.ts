@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 export class SpeciesmanagementComponent implements OnInit {
   returnUrl= "/dashboard/addspeciesmanagement";
   viewurl="/dashboard/viewspeciesmanagement";
+  editUrl="/dashboard/editspeciesmanagement";
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -45,7 +46,7 @@ export class SpeciesmanagementComponent implements OnInit {
     this.router.navigate([this.viewurl]);
   }
   editspeciesManagement(){
-    this.router.navigate([this.returnUrl]);
+    this.router.navigate([this.editUrl]);
   }
   }
 

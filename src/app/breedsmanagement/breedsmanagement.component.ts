@@ -9,6 +9,7 @@ declare var $: any;
 export class BreedsmanagementComponent implements OnInit {
   returnUrl= "/dashboard/addbreedsmanagement";
   viewurl= "/dashboard/viewbreedsmanagement";
+  editUrl="/dashboard/editbreedsmanagement"
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -46,7 +47,7 @@ export class BreedsmanagementComponent implements OnInit {
     this.router.navigate([this.viewurl]);
   }
   editbreedsmanagement(){
-    this.router.navigate([this.returnUrl]);
+    this.router.navigate([this.editUrl]);
   }
   }
 
